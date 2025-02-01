@@ -42,7 +42,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         <p className="text-gray-600">${product.price.toFixed(2)}</p>
         <button
           onClick={() => onAddToCart(product)}
-          className="mt-2 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors w-full"
+          className="mt-2 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition-colors w-full"
         >
           Add to Cart
         </button>
@@ -90,7 +90,7 @@ const CloudMartMainPage = () => {
       <Header />
       <main className="container mx-auto py-8 flex-grow px-4">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold">Featured Products</h2>
+          <h2 className="text-2xl font-bold">Main Products</h2>
           <div className="relative">
             <input
               type="text"
